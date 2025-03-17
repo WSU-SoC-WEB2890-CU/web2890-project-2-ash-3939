@@ -1,28 +1,334 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./stylesheets/main.scss" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karma:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <header>
+    <nav class="navbar navbar-expand-lg p-0 sticky-top">
+      <div class="container-fluid p-0">
+        <a class="navbar-brand" href="index.html"
+          ><img src="images/logo.png" alt="skyline residences" width="98px" height="83px"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav text-center me-3">
+            <li class="nav-item">
+              <a class="nav-link fs-4 active-link" aria-current="page" href="index.html"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-4" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-4" href="amenities.html">Amenities</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-4" href="floor-plans.html">Floor Plans</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-4" href="neighborhood.html">Neighborhood</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-4" href="contact-us.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <body>
+    <div id="carouselExampleIndicators" class="carousel slide mb-5" data-bs-ride="true">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active card" data-bs-interval="5000">
+          <div class="card-img-overlay d-flex justify-content-center align-items-center text-center">
+            <div class="card-body">
+              <h1>
+                Skyline Residences Apartments <br />
+                on Locust View Drive for <br />
+                Rent in Ogden, UT
+              </h1>
+              <a href="floor-plans.html" class="btn btn-khaki btn-block">Floor Plans</a>
+            </div>
+          </div>
+          <img
+            src="https://images.unsplash.com/photo-1515263487990-61b07816b324?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            class="d-block w-100 imgcarousel"
+            alt="outside of apartment"
+          />
+        </div>
+        <div class="carousel-item card" data-bs-interval="5000">
+          <img src="images/apartment ad2.png" class="d-block w-100 imgcarousel" alt="apartment ad" />
+        </div>
+        <div class="carousel-item card" data-bs-interval="5000">
+          <div class="card-img-overlay d-flex justify-content-center align-items-center text-center">
+            <div class="card-body">
+              <h1>
+                Excellent Amenities<br />
+                We Offer Take a look
+              </h1>
+              <a href="floor-plans.html" class="btn btn-navy btn-block">Amenities</a>
+            </div>
+          </div>
+          <img
+            src="https://images.unsplash.com/photo-1596357395104-ba989e72b5ec?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            class="d-block w-100 imgcarousel"
+            alt="a gym"
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
 
-<head>
-  <meta charset="utf-8">
-  <title>WEB 2890 - Project 2</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="index,follow">
-  <meta name="description" content="TODO: Project 2 ...">
+    <div class="card border-0 section1">
+      <div class="card-body">
+        <h2>About the Skyline Residences Apartments</h2>
+        <p class="card1">
+          Skyline Residences is an upscale apartment complex redefining city living with its modern design and stunning
+          views. Nestled in the heart of the city, these apartments offer contemporary interiors, high-end finishes, and
+          spacious layouts. Residents enjoy breathtaking cityscape vistas from the rooftop lounge, a state-of-the-art
+          fitness center, and stylish communal spaces. Skyline Residences embodies luxury living and community,
+          providing a vibrant urban lifestyle in a prime location.
+        </p>
+      </div>
+    </div>
 
-  <link rel="stylesheet" href="./stylesheets/main.scss">
-</head>
+    <div class="container-fluid mb-3">
+      <div class="card pop-in">
+        <div class="card-img-overlay d-flex justify-content-center align-items-center text-center">
+          <div class="card-body fixmar">
+            <h5>Ogden Neighborhood</h5>
+            <p class="med">Conveniently located near shopping, dining, and entertainment!</p>
+            <div class="d-grid col-6 mx-auto mt-3">
+              <a href="neighborhood.html"><button class="btn btn-khaki index-btn" type="button">See More</button></a>
+            </div>
+          </div>
+        </div>
+        <img src="images/neighborhood.jpg" class="d-block w-100 imgcarousel" alt="neighborhood" />
+      </div>
+    </div>
 
-<body>
-  <!-- Your HTML goes here -->
-  <h1 class="display-2 text-center my-5 py-5">
-    <span class="d-block py-5 mt-5">
-      <i class="bi bi-filetype-html text-primary"></i> / 
-      <i class="bi bi-filetype-css text-danger"></i> / 
-      <i class="bi bi-filetype-js text-success"></i>
-    </span>
-    
-    Project 2: A multiple-page project of your choosing.
-  </h1>
+    <div class="card border-0 mb-5">
+      <div class="card-body">
+        <h3 class="text-center">About the Skyline Residences Apartments</h3>
+        <div class="row align-items-start">
+          <div class="col-md-3 offset-md-3">
+            <ul>
+              <li>State-of-Art Fitness Center</li>
+              <li>Secure Parking</li>
+              <li>Pet-Friendly Facilities</li>
+            </ul>
+          </div>
+          <div class="col">
+            <ul>
+              <li>High-Speed Internet</li>
+              <li>On-Site Maintenance</li>
+              <li>Breathtaking Views</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
 
-  <script type="module" src="./javascripts/main.js"></script>
-</body>
+    <div class="card border-0">
+      <div class="card-body text-center">
+        <h3>Gallery</h3>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="col">
+            <div class="card gallery-item">
+              <button type="button" class="btn border-0 p-0" data-bs-toggle="modal" data-bs-target="#Modal1">
+                <img
+                  src="https://images.unsplash.com/photo-1621891334481-5c14b369d9d7?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  class="card-img-top"
+                  alt="apartment bedroom"
+                />
+              </button>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card gallery-item">
+              <button type="button" class="btn border-0 p-0" data-bs-toggle="modal" data-bs-target="#Modal2">
+                <img
+                  src="https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  class="card-img-top"
+                  alt="apartment kitchen"
+                />
+              </button>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card gallery-item">
+              <button type="button" class="btn border-0 p-0" data-bs-toggle="modal" data-bs-target="#Modal3">
+                <img
+                  src="https://images.unsplash.com/photo-1515263487990-61b07816b324?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  class="card-img-top"
+                  alt="apartment outside"
+                />
+              </button>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card gallery-item">
+              <button type="button" class="btn border-0 p-0" data-bs-toggle="modal" data-bs-target="#Modal4">
+                <img
+                  src="https://images.unsplash.com/photo-1623874514711-0f321325f318?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  class="card-img-top"
+                  alt="the gym"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal1 -->
+    <div class="modal fade" id="Modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-sm modal-lg modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="https://images.unsplash.com/photo-1621891334481-5c14b369d9d7?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="card-img-top"
+              alt="apartment bedroom"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal2 -->
+    <div class="modal fade" id="Modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-sm modal-lg modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="card-img-top"
+              alt="apartment kitchen"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal3 -->
+    <div class="modal fade" id="Modal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-sm modal-lg modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="https://images.unsplash.com/photo-1515263487990-61b07816b324?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="card-img-top"
+              alt="apartment outside"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal4 -->
+    <div class="modal fade" id="Modal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-sm modal-lg modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="https://images.unsplash.com/photo-1623874514711-0f321325f318?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="card-img-top"
+              alt="the gym"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid bg-lighter-blue pb-3 mt-5">
+      <footer class="d-flex flex-wrap justify-content-between align-items-centermy-4">
+        <div class="col-md-4 d-flex align-items-center ms-3">
+          <span class="mb-md-0 mt-4">©2025 Skyline Residences</span>
+        </div>
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex me-3 mt-4">
+          <li class="ms-3">
+            <a href="#"
+              ><i class="fab fa-facebook-square fa-lg" style="color: #16253f; width: 2rem; height: 2rem"></i
+            ></a>
+          </li>
+          <li class="ms-3">
+            <a href="#"><i class="fab fa-instagram fa-lg" style="color: #16253f; width: 2rem; height: 2rem"></i></a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+
+    <script type="module" src="./javascripts/main.js"></script>
+  </body>
 </html>

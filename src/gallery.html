@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./stylesheets/main.scss" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karma:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <header>
+    <nav class="navbar navbar-expand-lg p-0 sticky-top">
+      <div class="container-fluid p-0">
+        <a class="navbar-brand" href="index.html"
+          ><img src="images/logo.png" alt="skyline residences" width="98px" height="83px"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav text-center me-3">
+            <li class="nav-item">
+              <a class="nav-link fs-4" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-4 active-link" aria-current="page" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-4" href="amenities.html">Amenities</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-4" href="floor-plans.html">Floor Plans</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-4" href="neighborhood.html">Neighborhood</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-4" href="contact-us.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <body>
+    <div class="card border-0 mt-5 mb-2">
+      <div class="card-body text-center">
+        <h1 class="mb-3">
+          Skyline Residences <br />
+          Apartment Photography
+        </h1>
+        <p class="card2 mb-4">
+          A little preview of the apartment and what we have to offer at our Apartment complex. If you like what you see
+          schedule a tour with us!
+        </p>
+      </div>
+    </div>
+    <div class="container">
+      <nav class="mb-5">
+        <div class="nav nav-tabs border-bottom border-light-blue" id="nav-tab" role="tablist">
+          <button
+            class="nav-link active"
+            id="nav-home-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#nav-home"
+            type="button"
+            role="tab"
+            aria-controls="nav-home"
+            aria-selected="true"
+          >
+            All
+          </button>
+          <button
+            class="nav-link"
+            id="nav-apartment-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#nav-apartment"
+            type="button"
+            role="tab"
+            aria-controls="nav-apartment"
+            aria-selected="false"
+          >
+            Apartment
+          </button>
+          <button
+            class="nav-link"
+            id="nav-amenities-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#nav-amenities"
+            type="button"
+            role="tab"
+            aria-controls="nav-amenities"
+            aria-selected="false"
+          >
+            Amenities
+          </button>
+        </div>
+      </nav>
+      <div class="tab-content" id="nav-tabContent">
+        <div
+          class="tab-pane fade show active"
+          id="nav-home"
+          role="tabpanel"
+          aria-labelledby="nav-home-tab"
+          tabindex="0"
+        >
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card h-100">
+                <button type="button" class="btn border-0 p-0" data-bs-toggle="modal" data-bs-target="#Modal1">
+                  <img
+                    src="https://images.unsplash.com/photo-1621891334481-5c14b369d9d7?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="card-img-top"
+                    alt="apartment bedroom"
+                  />
+                </button>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <button type="button" class="btn border-0 p-0" data-bs-toggle="modal" data-bs-target="#Modal2">
+                  <img
+                    src="https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="card-img-top"
+                    alt="apartment kitchen"
+                  />
+                </button>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <button type="button" class="btn border-0 p-0" data-bs-toggle="modal" data-bs-target="#Modal3">
+                  <img
+                    src="https://images.unsplash.com/photo-1515263487990-61b07816b324?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="card-img-top"
+                    alt="apartment outside"
+                  />
+                </button>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <button type="button" class="btn border-0 p-0" data-bs-toggle="modal" data-bs-target="#Modal4">
+                  <img
+                    src="https://images.unsplash.com/photo-1623874514711-0f321325f318?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="card-img-top"
+                    alt="the gym"
+                  />
+                </button>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <button type="button" class="btn border-0 p-0" data-bs-toggle="modal" data-bs-target="#Modal5">
+                  <img
+                    src="https://images.unsplash.com/flagged/photo-1556438758-8be0c4afe990?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="card-img-top"
+                    alt="pool"
+                  />
+                </button>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <button type="button" class="btn border-0 p-0" data-bs-toggle="modal" data-bs-target="#Modal6">
+                  <img
+                    src="https://images.unsplash.com/photo-1575783970733-1aaedde1db74?q=80&w=1776&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="card-img-top"
+                    alt="playground"
+                  />
+                </button>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <button type="button" class="btn border-0 p-0" data-bs-toggle="modal" data-bs-target="#Modal7">
+                  <img
+                    src="https://images.unsplash.com/photo-1618506601658-7bbd6b03616a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="card-img-top"
+                    alt="parking"
+                  />
+                </button>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <button type="button" class="btn border-0 p-0" data-bs-toggle="modal" data-bs-target="#Modal8">
+                  <img
+                    src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="card-img-top"
+                    alt="living room"
+                  />
+                </button>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <button type="button" class="btn border-0 p-0" data-bs-toggle="modal" data-bs-target="#Modal9">
+                  <img
+                    src="https://images.unsplash.com/photo-1560448075-bb485b067938?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="card-img-top"
+                    alt="bathroom"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="nav-apartment" role="tabpanel" aria-labelledby="nav-apartment-tab" tabindex="0">
+          <div
+            class="tab-pane fade show active"
+            id="nav-apartment"
+            role="tabpanel"
+            aria-labelledby="nav-apartment-tab"
+            tabindex="0"
+          >
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="col">
+                <div class="card h-100">
+                  <button type="button" class="btn border-0 p-0" data-bs-toggle="modal" data-bs-target="#Modal1">
+                    <img
+                      src="https://images.unsplash.com/photo-1621891334481-5c14b369d9d7?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                      class="card-img-top"
+                      alt="apartment bedroom"
+                    />
+                  </button>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <button type="button" class="btn border-0 p-0" data-bs-toggle="modal" data-bs-target="#Modal2">
+                    <img
+                      src="https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                      class="card-img-top"
+                      alt="apartment kitchen"
+                    />
+                  </button>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <button type="button" class="btn border-0 p-0" data-bs-toggle="modal" data-bs-target="#Modal3">
+                    <img
+                      src="https://images.unsplash.com/photo-1515263487990-61b07816b324?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                      class="card-img-top"
+                      alt="apartment outside"
+                    />
+                  </button>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <button type="button" class="btn border-0 p-0" data-bs-toggle="modal" data-bs-target="#Modal8">
+                    <img
+                      src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                      class="card-img-top"
+                      alt="living room"
+                    />
+                  </button>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <button type="button" class="btn border-0 p-0" data-bs-toggle="modal" data-bs-target="#Modal9">
+                    <img
+                      src="https://images.unsplash.com/photo-1560448075-bb485b067938?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                      class="card-img-top"
+                      alt="bathroom"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="nav-amenities" role="tabpanel" aria-labelledby="nav-amenities-tab" tabindex="0">
+          <div
+            class="tab-pane fade show active"
+            id="nav-amenities"
+            role="tabpanel"
+            aria-labelledby="nav-amenities-tab"
+            tabindex="0"
+          >
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="col">
+                <div class="card h-100">
+                  <button type="button" class="btn border-0 p-0" data-bs-toggle="modal" data-bs-target="#Modal4">
+                    <img
+                      src="https://images.unsplash.com/photo-1623874514711-0f321325f318?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                      class="card-img-top"
+                      alt="the gym"
+                    />
+                  </button>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <button type="button" class="btn border-0 p-0" data-bs-toggle="modal" data-bs-target="#Modal5">
+                    <img
+                      src="https://images.unsplash.com/flagged/photo-1556438758-8be0c4afe990?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                      class="card-img-top"
+                      alt="pool"
+                    />
+                  </button>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <button type="button" class="btn border-0 p-0" data-bs-toggle="modal" data-bs-target="#Modal6">
+                    <img
+                      src="https://images.unsplash.com/photo-1575783970733-1aaedde1db74?q=80&w=1776&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                      class="card-img-top"
+                      alt="playground"
+                    />
+                  </button>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <button type="button" class="btn border-0 p-0" data-bs-toggle="modal" data-bs-target="#Modal7">
+                    <img
+                      src="https://images.unsplash.com/photo-1618506601658-7bbd6b03616a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                      class="card-img-top"
+                      alt="parking"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal1 -->
+    <div class="modal fade" id="Modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-sm modal-lg modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="https://images.unsplash.com/photo-1621891334481-5c14b369d9d7?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="card-img-top"
+              alt="apartment bedroom"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal2 -->
+    <div class="modal fade" id="Modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-sm modal-lg modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="card-img-top"
+              alt="apartment kitchen"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal3 -->
+    <div class="modal fade" id="Modal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-sm modal-lg modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="https://images.unsplash.com/photo-1515263487990-61b07816b324?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="card-img-top"
+              alt="apartment outside"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal4 -->
+    <div class="modal fade" id="Modal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-sm modal-lg modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="https://images.unsplash.com/photo-1623874514711-0f321325f318?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="card-img-top"
+              alt="the gym"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal5 -->
+    <div class="modal fade" id="Modal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-sm modal-lg modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="https://images.unsplash.com/flagged/photo-1556438758-8be0c4afe990?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="card-img-top"
+              alt="the gym"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal6 -->
+    <div class="modal fade" id="Modal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-sm modal-lg modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="https://images.unsplash.com/photo-1575783970733-1aaedde1db74?q=80&w=1776&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="card-img-top"
+              alt="the gym"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal7 -->
+    <div class="modal fade" id="Modal7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-sm modal-lg modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="https://images.unsplash.com/photo-1618506601658-7bbd6b03616a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="card-img-top"
+              alt="the gym"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal8 -->
+    <div class="modal fade" id="Modal8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-sm modal-lg modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="card-img-top"
+              alt="the gym"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal9 -->
+    <div class="modal fade" id="Modal9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-sm modal-lg modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="https://images.unsplash.com/photo-1560448075-bb485b067938?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="card-img-top"
+              alt="the gym"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid bg-lighter-blue pb-3 mt-5">
+      <footer class="d-flex flex-wrap justify-content-between align-items-centermy-4">
+        <div class="col-md-4 d-flex align-items-center ms-3">
+          <span class="mb-md-0 mt-4">©2025 Skyline Residences</span>
+        </div>
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex me-3 mt-4">
+          <li class="ms-3">
+            <a href="#"
+              ><i class="fab fa-facebook-square fa-lg" style="color: #16253f; width: 2rem; height: 2rem"></i
+            ></a>
+          </li>
+          <li class="ms-3">
+            <a href="#"><i class="fab fa-instagram fa-lg" style="color: #16253f; width: 2rem; height: 2rem"></i></a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+
+    <script type="module" src="./javascripts/main.js"></script>
+  </body>
+</html>
