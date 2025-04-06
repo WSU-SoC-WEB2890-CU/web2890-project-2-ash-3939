@@ -91,7 +91,7 @@
                 on Locust View Drive for <br />
                 Rent in Ogden, UT
               </h1>
-              <a href="floor-plans.html" class="btn btn-khaki btn-block">Floor Plans</a>
+              <a href="floor-plans.html" class="btn btn-dark-blue btn-block col-2">Floor Plans</a>
             </div>
           </div>
           <img
@@ -110,7 +110,7 @@
                 Excellent Amenities<br />
                 We Offer Take a look
               </h1>
-              <a href="floor-plans.html" class="btn btn-khaki btn-block">Amenities</a>
+              <a href="floor-plans.html" class="btn btn-dark-blue btn-block col-2">Amenities</a>
             </div>
           </div>
           <img
@@ -140,7 +140,7 @@
       </button>
     </div>
 
-    <div class="card border-0 section1">
+    <div class="card border-0 section1 container">
       <div class="card-body">
         <h2>About the Skyline Residences Apartments</h2>
         <p class="card1">
@@ -160,7 +160,9 @@
             <h5>Ogden Neighborhood</h5>
             <p class="med">Conveniently located near shopping, dining, and entertainment!</p>
             <div class="d-grid col-6 mx-auto mt-3">
-              <a href="neighborhood.html"><button class="btn btn-khaki index-btn" type="button">See More</button></a>
+              <a href="neighborhood.html"
+                ><button class="btn index-btn btn-dark-blue col-5" type="button">See More</button></a
+              >
             </div>
           </div>
         </div>
@@ -195,46 +197,66 @@
         <h3>Gallery</h3>
         <div class="row row-cols-1 row-cols-md-2 g-4">
           <div class="col">
-            <div class="card gallery-item">
+            <div class="card gallery-item position-relative">
               <button type="button" class="btn border-0 p-0" data-bs-toggle="modal" data-bs-target="#Modal1">
                 <img
                   src="https://images.unsplash.com/photo-1621891334481-5c14b369d9d7?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   class="card-img-top"
                   alt="apartment bedroom"
                 />
+                <div
+                  class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center text-white"
+                >
+                  <a href="floor-plans.html" class="text-decoration-none text-white">View Bedroom Details</a>
+                </div>
               </button>
             </div>
           </div>
           <div class="col">
-            <div class="card gallery-item">
+            <div class="card gallery-item position-relative">
               <button type="button" class="btn border-0 p-0" data-bs-toggle="modal" data-bs-target="#Modal2">
                 <img
                   src="https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   class="card-img-top"
                   alt="apartment kitchen"
                 />
+                <div
+                  class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center text-white"
+                >
+                  <a href="amenities.html" class="text-decoration-none text-white">Explore Kitchen Amenities</a>
+                </div>
               </button>
             </div>
           </div>
           <div class="col">
-            <div class="card gallery-item">
+            <div class="card gallery-item position-relative">
               <button type="button" class="btn border-0 p-0" data-bs-toggle="modal" data-bs-target="#Modal3">
                 <img
                   src="https://images.unsplash.com/photo-1515263487990-61b07816b324?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   class="card-img-top"
                   alt="apartment outside"
                 />
+                <div
+                  class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center text-white"
+                >
+                  <a href="gallery.html" class="text-decoration-none text-white">See Exterior Views</a>
+                </div>
               </button>
             </div>
           </div>
           <div class="col">
-            <div class="card gallery-item">
+            <div class="card gallery-item position-relative">
               <button type="button" class="btn border-0 p-0" data-bs-toggle="modal" data-bs-target="#Modal4">
                 <img
                   src="https://images.unsplash.com/photo-1623874514711-0f321325f318?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   class="card-img-top"
                   alt="the gym"
                 />
+                <div
+                  class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center text-white"
+                >
+                  <a href="amenities.html" class="text-decoration-none text-white">Discover Gym Features</a>
+                </div>
               </button>
             </div>
           </div>

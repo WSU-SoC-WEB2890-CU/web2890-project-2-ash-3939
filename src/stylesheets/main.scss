@@ -63,10 +63,12 @@ body {
 
 .card-btn {
   font-family: "Inter", Courier, monospace;
-  font-size: 12px;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: 700;
   text-align: center;
-  width: 50%;
+  color: $white;
+  width: 25%;
+  padding: 0.5rem 1rem;
   background-color: #5b7a96;
   transition: transform 0.3s ease, background-color 0.3s ease;
 
@@ -97,7 +99,7 @@ body {
 }
 
 .active-link {
-  color: #aea294;
+  color: #ffffff;
   text-decoration: underline;
   text-decoration-thickness: 3px;
   position: relative;
@@ -113,7 +115,7 @@ body {
   }
 
   &:hover {
-    color: #cfc1b0;
+    color: #e9e9e9;
   }
 }
 
@@ -216,32 +218,18 @@ span {
 }
 
 // Button styles
-.index-btn {
-  font-family: "Inter", Courier, monospace;
-  font-size: 12px;
-  font-weight: 600;
-  text-align: center;
-  width: 50%;
-  transition: transform 0.3s ease, background-color 0.3s ease;
-
-  &:hover {
-    transform: scale(1.1);
-    background-color: #dcc3a7;
-    color: #ffffff;
-  }
-}
-
 .btn-block,
-.btn-khaki {
-  font-size: 12px;
-  font-weight: 600;
+.index-btn {
+  font-size: 15px;
+  font-weight: 700;
   text-align: center;
   font-family: "Inter", Courier, monospace;
+  color: $white;
   transition: transform 0.3s ease, background-color 0.3s ease;
 
   &:hover {
     transform: scale(1.1);
-    background-color: #dcc3a7;
+    background-color: #7996af;
     color: #ffffff;
   }
 }
@@ -354,13 +342,16 @@ span {
   }
 
   .card-btn {
-    font-size: 10px;
-    font-weight: 600;
-    width: 75%;
+    font-size: 16px;
+    font-weight: 700;
+    width: 50%;
   }
 }
 
 @include media-breakpoint-up(lg) {
+  li {
+    font-size: 20px;
+  }
   .navbar-collapse {
     background-color: #d1e2f0;
   }
@@ -385,10 +376,14 @@ span {
     margin-bottom: 5rem;
     margin-left: 10px;
     margin-right: 10px;
+    padding: 0 52px;
   }
   .card1 {
     width: 75%;
-    font-size: 16px;
+    font-size: 20px;
+  }
+  .card2 {
+    font-size: 20px;
   }
 
   h3 {
@@ -427,7 +422,7 @@ span {
   }
 
   .card-btn {
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 600;
   }
 }
