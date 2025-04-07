@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Floor Plans</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./stylesheets/main.scss" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karma:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <header>
+    <nav class="navbar navbar-expand-lg p-0 sticky-top">
+      <div class="container-fluid p-0">
+        <a class="navbar-brand" href="index.html"
+          ><img src="images/logo.png" alt="skyline residences" width="98px" height="83px"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav text-center me-3">
+            <li class="nav-item">
+              <a class="nav-link fs-4" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-4" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-4" href="amenities.html">Amenities</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-4 active-link" aria-current="page" href="floor-plans.html">Floor Plans</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-4" href="neighborhood.html">Neighborhood</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-4" href="contact-us.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <body>
+    <div class="card text-black">
+      <img
+        class="card-img w-100"
+        style="height: 400px"
+        src="https://images.unsplash.com/photo-1542621334-a254cf47733d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="caution"
+      />
+      <div class="card-img-overlay text-center d-flex justify-content-center align-items-center">
+        <div class="row">
+          <div class="col-12 fw-700">
+            <h5 class="card-title">Skyline Residences Floor Plans</h5>
+          </div>
+          <div class="col-12 fw-semibold">
+            <p class="card-text">Studio, 1-2 bedroom apartments</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="card2 mt-5 mb-5 ms-5 me-5">
+      Skyline Residences offers a stunning selection of thoughtfully designed apartments tailored for your comfort and
+      lifestyle. Our modern floor plans prioritize your convenience and enjoyment, creating the perfect space to call
+      home. Elevate your living experience in Ogden, UT, by choosing Skyline Residences as your new home.
+    </p>
+
+    <div class="container">
+      <nav>
+        <div class="nav nav-tabs border-bottom border-light-blue" id="nav-tab" role="tablist">
+          <button
+            class="nav-link active"
+            id="nav-home-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#nav-home"
+            type="button"
+            role="tab"
+            aria-controls="nav-home"
+            aria-selected="true"
+          >
+            All
+          </button>
+          <button
+            class="nav-link"
+            id="nav-studio-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#nav-studio"
+            type="button"
+            role="tab"
+            aria-controls="nav-studio"
+            aria-selected="false"
+          >
+            Studio
+          </button>
+          <button
+            class="nav-link"
+            id="nav-oneb-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#nav-oneb"
+            type="button"
+            role="tab"
+            aria-controls="nav-oneb"
+            aria-selected="false"
+          >
+            1 Bedroom
+          </button>
+          <button
+            class="nav-link"
+            id="nav-twob-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#nav-twob"
+            type="button"
+            role="tab"
+            aria-controls="nav-twob"
+            aria-selected="false"
+          >
+            2 Bedroom
+          </button>
+        </div>
+      </nav>
+      <div class="tab-content mt-5" id="nav-tabContent">
+        <div
+          class="tab-pane fade show active"
+          id="nav-home"
+          role="tabpanel"
+          aria-labelledby="nav-home-tab"
+          tabindex="0"
+        >
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col text-center">
+              <div class="card h-100">
+                <img src="images/studio/32081.jpg" class="card-img-top" alt="studio apartment layout" />
+                <div class="card-body">
+                  <h6 class="card-title">STUDIO A3</h6>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item apt-li">SQ Feet: 369</li>
+                  <li class="list-group-item apt-li">Bedrooms: Studio</li>
+                  <li class="list-group-item apt-li">Bathrooms: 1</li>
+                  <li class="list-group-item apt-li">Deposit: $0</li>
+                </ul>
+
+                <div class="card-body">
+                  <h6 class="card-price">$1000-1140</h6>
+                  <p class="para-card">per month</p>
+                </div>
+                <div class="card-body">
+                  <button type="button" class="btn btn-light-blue card-btn">Limited | More Info</button>
+                </div>
+              </div>
+            </div>
+            <div class="col text-center">
+              <div class="card h-100">
+                <img src="images/one-bedroom/onebed_1.jpg" class="card-img-top" alt="studio apartment layout" />
+                <div class="card-body">
+                  <h6 class="card-title">1x1 B3</h6>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item apt-li">SQ Feet: 540</li>
+                  <li class="list-group-item apt-li">Bedrooms: 1</li>
+                  <li class="list-group-item apt-li">Bathrooms: 1</li>
+                  <li class="list-group-item apt-li">Deposit: $0</li>
+                </ul>
+
+                <div class="card-body">
+                  <h6 class="card-price">$1260-1330</h6>
+                  <p class="para-card">per month</p>
+                </div>
+                <div class="card-body">
+                  <button type="button" class="btn btn-light-blue card-btn">Limited | More Info</button>
+                </div>
+              </div>
+            </div>
+            <div class="col text-center">
+              <div class="card h-100">
+                <img src="images/one-bedroom/onebed_2.jpg" class="card-img-top" alt="studio apartment layout" />
+                <div class="card-body">
+                  <h6 class="card-title">1x1 B15</h6>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item apt-li">SQ Feet: 746</li>
+                  <li class="list-group-item apt-li">Bedrooms: 1</li>
+                  <li class="list-group-item apt-li">Bathrooms: 1</li>
+                  <li class="list-group-item apt-li">Deposit: $0</li>
+                </ul>
+
+                <div class="card-body">
+                  <h6 class="card-price">$1520-1550</h6>
+                  <p class="para-card">per month</p>
+                </div>
+                <div class="card-body">
+                  <button type="button" class="btn btn-light-blue card-btn">Limited | More Info</button>
+                </div>
+              </div>
+            </div>
+            <div class="col text-center">
+              <div class="card h-100">
+                <img src="images/two-bedroom1/15200.jpg" class="card-img-top" alt="studio apartment layout" />
+                <div class="card-body">
+                  <h6 class="card-title">2x2 C3</h6>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item apt-li">SQ Feet: 831</li>
+                  <li class="list-group-item apt-li">Bedrooms: 2</li>
+                  <li class="list-group-item apt-li">Bathrooms: 1</li>
+                  <li class="list-group-item apt-li">Deposit: $0</li>
+                </ul>
+
+                <div class="card-body">
+                  <h6 class="card-price">$1600-1630</h6>
+                  <p class="para-card">per month</p>
+                </div>
+                <div class="card-body">
+                  <button type="button" class="btn btn-light-blue card-btn">Limited | More Info</button>
+                </div>
+              </div>
+            </div>
+            <div class="col text-center">
+              <div class="card h-100">
+                <img src="images/two-bedroom2/15197.jpg" class="card-img-top" alt="studio apartment layout" />
+                <div class="card-body">
+                  <h6 class="card-title">2x2 C13</h6>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item apt-li">SQ Feet: 956</li>
+                  <li class="list-group-item apt-li">Bedrooms: 2</li>
+                  <li class="list-group-item apt-li">Bathrooms: 1</li>
+                  <li class="list-group-item apt-li">Deposit: $0</li>
+                </ul>
+
+                <div class="card-body">
+                  <h6 class="card-price">$1770-1800</h6>
+                  <p class="para-card">per month</p>
+                </div>
+                <div class="card-body">
+                  <button type="button" class="btn btn-light-blue card-btn">Limited | More Info</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Studio -->
+        <div class="tab-pane fade" id="nav-studio" role="tabpanel" aria-labelledby="nav-studio-tab" tabindex="0">
+          <div
+            class="tab-pane fade show active"
+            id="nav-studio"
+            role="tabpanel"
+            aria-labelledby="nav-studio-tab"
+            tabindex="0"
+          >
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="col text-center">
+                <div class="card h-100">
+                  <img src="images/studio/32081.jpg" class="card-img-top" alt="studio apartment layout" />
+                  <div class="card-body">
+                    <h6 class="card-title">STUDIO A3</h6>
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item apt-li">SQ Feet: 369</li>
+                    <li class="list-group-item apt-li">Bedrooms: Studio</li>
+                    <li class="list-group-item apt-li">Bathrooms: 1</li>
+                    <li class="list-group-item apt-li">Deposit: $0</li>
+                  </ul>
+
+                  <div class="card-body">
+                    <h6 class="card-price">$1000-1140</h6>
+                    <p class="para-card">per month</p>
+                  </div>
+                  <div class="card-body">
+                    <button type="button" class="btn btn-light-blue card-btn">Limited | More Info</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- one bed -->
+        <div class="tab-pane fade" id="nav-oneb" role="tabpanel" aria-labelledby="nav-oneb-tab" tabindex="0">
+          <div
+            class="tab-pane fade show active"
+            id="nav-oneb"
+            role="tabpanel"
+            aria-labelledby="nav-oneb-tab"
+            tabindex="0"
+          >
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="col text-center">
+                <div class="card h-100">
+                  <img src="images/one-bedroom/onebed_1.jpg" class="card-img-top" alt="studio apartment layout" />
+                  <div class="card-body">
+                    <h6 class="card-title">1x1 B3</h6>
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item apt-li">SQ Feet: 540</li>
+                    <li class="list-group-item apt-li">Bedrooms: 1</li>
+                    <li class="list-group-item apt-li">Bathrooms: 1</li>
+                    <li class="list-group-item apt-li">Deposit: $0</li>
+                  </ul>
+
+                  <div class="card-body">
+                    <h6 class="card-price">$1260-1330</h6>
+                    <p class="para-card">per month</p>
+                  </div>
+                  <div class="card-body">
+                    <button type="button" class="btn btn-light-blue card-btn">Limited | More Info</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col text-center">
+                <div class="card h-100">
+                  <img src="images/one-bedroom/onebed_2.jpg" class="card-img-top" alt="studio apartment layout" />
+                  <div class="card-body">
+                    <h6 class="card-title">1x1 B15</h6>
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item apt-li">SQ Feet: 746</li>
+                    <li class="list-group-item apt-li">Bedrooms: 1</li>
+                    <li class="list-group-item apt-li">Bathrooms: 1</li>
+                    <li class="list-group-item apt-li">Deposit: $0</li>
+                  </ul>
+
+                  <div class="card-body">
+                    <h6 class="card-price">$1520-1550</h6>
+                    <p class="para-card">per month</p>
+                  </div>
+                  <div class="card-body">
+                    <button type="button" class="btn btn-light-blue card-btn">Limited | More Info</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- two bed -->
+        <div class="tab-pane fade" id="nav-twob" role="tabpanel" aria-labelledby="nav-twob-tab" tabindex="0">
+          <div
+            class="tab-pane fade show active"
+            id="nav-twob"
+            role="tabpanel"
+            aria-labelledby="nav-twob-tab"
+            tabindex="0"
+          >
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="col text-center">
+                <div class="card h-100">
+                  <img src="images/two-bedroom1/15200.jpg" class="card-img-top" alt="studio apartment layout" />
+                  <div class="card-body">
+                    <h6 class="card-title">2x2 C3</h6>
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item apt-li">SQ Feet: 831</li>
+                    <li class="list-group-item apt-li">Bedrooms: 2</li>
+                    <li class="list-group-item apt-li">Bathrooms: 1</li>
+                    <li class="list-group-item apt-li">Deposit: $0</li>
+                  </ul>
+
+                  <div class="card-body">
+                    <h6 class="card-price">$1600-1630</h6>
+                    <p class="para-card">per month</p>
+                  </div>
+                  <div class="card-body">
+                    <button type="button" class="btn btn-light-blue card-btn">Limited | More Info</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col text-center">
+                <div class="card h-100">
+                  <img src="images/two-bedroom2/15197.jpg" class="card-img-top" alt="studio apartment layout" />
+                  <div class="card-body">
+                    <h6 class="card-title">2x2 C13</h6>
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item apt-li">SQ Feet: 956</li>
+                    <li class="list-group-item apt-li">Bedrooms: 2</li>
+                    <li class="list-group-item apt-li">Bathrooms: 1</li>
+                    <li class="list-group-item apt-li">Deposit: $0</li>
+                  </ul>
+
+                  <div class="card-body">
+                    <h6 class="card-price">$1770-1800</h6>
+                    <p class="para-card">per month</p>
+                  </div>
+                  <div class="card-body">
+                    <button type="button" class="btn btn-light-blue card-btn">Limited | More Info</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid bg-lighter-blue pb-3 mt-5">
+      <footer class="d-flex flex-wrap justify-content-between align-items-centermy-4">
+        <div class="col-md-4 d-flex align-items-center ms-3">
+          <span class="mb-md-0 mt-4">©2025 Skyline Residences</span>
+        </div>
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex me-3 mt-4">
+          <li class="ms-3">
+            <a href="#"
+              ><i class="fab fa-facebook-square fa-lg" style="color: #16253f; width: 2rem; height: 2rem"></i
+            ></a>
+          </li>
+          <li class="ms-3">
+            <a href="#"><i class="fab fa-instagram fa-lg" style="color: #16253f; width: 2rem; height: 2rem"></i></a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+    <script type="module" src="./javascripts/main.js"></script>
+  </body>
+</html>

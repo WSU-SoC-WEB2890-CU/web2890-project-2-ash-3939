@@ -1,3 +1,428 @@
-/* Your styles go here */
-@import "bootstrap/scss/bootstrap.scss";
-@import "bootstrap-icons/font/bootstrap-icons.css";
+// Variables
+$nav-link-hover-color: #5b7a96;
+$nav-link-color: #000000;
+$carousel-control-color: #5d5c61;
+$carousel-indicator-active-bg: #5d5c61;
+
+// Font settings
+$font-family-sans-serif: "Karma";
+$font-family-monospace: "Inter", monospace;
+
+// Imports
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+
+// Custom color map
+$custom-colors: (
+  "grey": #5d5c61,
+  "light-grey": #928e94,
+  "lighter-blue": #d1e2f0,
+  "light-blue": #7996af,
+  "dark-blue": #5b7a96,
+  "navy": #16253f,
+  "khaki": #cfae8a,
+  "black": #000000,
+  "white": #ffffff,
+);
+
+// Merge custom colors with Bootstrap theme colors
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+@import "@fortawesome/fontawesome-free/css/all.css";
+@import "bootstrap/scss/bootstrap";
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karma:wght@300;400;500;600;700&display=swap");
+
+// Global styles
+body {
+  margin: 0;
+}
+
+// Card styles
+.card-text {
+  font-size: 1.3rem;
+}
+
+.card-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: rgb(22, 37, 63);
+}
+
+.card-price {
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.para-card {
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+.card-btn {
+  font-family: "Inter", Courier, monospace;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  color: $white;
+  width: 25%;
+  padding: 0.5rem 1rem;
+  background-color: #5b7a96;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1);
+    background-color: #7996af;
+    color: #ffffff;
+  }
+}
+
+// Navbar styles
+.navbar {
+  background-color: #d1e2f0;
+  box-shadow: 0 0 12px rgba(22, 37, 63, 0.1);
+}
+
+.navbar-toggler-icon {
+  color: #000000;
+}
+
+.nav-link {
+  font-weight: 600;
+  color: #16253f;
+
+  &:hover {
+    color: #5b7a96;
+  }
+}
+
+.active-link {
+  color: #ffffff;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  position: relative;
+
+  &:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: -2px;
+    left: 0;
+    border-radius: 0 0 10px 10px;
+  }
+
+  &:hover {
+    color: #e9e9e9;
+  }
+}
+
+// Gallery styles
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+
+    img {
+      transform: scale(1.1);
+    }
+
+    .overlay {
+      opacity: 1;
+    }
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+  }
+}
+
+// Typography styles
+h5 {
+  font-weight: 700;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+h4 {
+  color: #16253f;
+}
+h6 {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #16253f;
+}
+h6 .hours,
+h6 .contact-info {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+h6 .contact-info {
+  color: #5b7a96;
+  text-decoration: none;
+
+  &:hover {
+    color: #7996af;
+  }
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: rgb(22, 37, 63);
+}
+
+span {
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.apt-li {
+  color: #5b7a96;
+  font-weight: 600;
+}
+
+// Button styles
+.btn-block,
+.index-btn {
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+  font-family: "Inter", Courier, monospace;
+  color: $white;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1);
+    background-color: #7996af;
+    color: #ffffff;
+  }
+}
+
+// Responsive styles
+@include media-breakpoint-up(sx) {
+  .navbar-collapse {
+    background-color: #ffffff;
+  }
+
+  .imgcarousel {
+    height: 200px;
+  }
+
+  .card-img-overlay {
+    background-color: #ffffff90;
+  }
+
+  .pop-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+
+    &.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .section1 {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .fixmar {
+    padding-top: 3rem;
+  }
+
+  .imgban {
+    height: 375px;
+    width: 100%;
+  }
+
+  .card-link {
+    font-weight: 600;
+    color: #3f5e77;
+    font-size: 1.2rem;
+  }
+
+  .med {
+    font-weight: 500;
+    font-size: 1rem;
+  }
+
+  .jumbo {
+    height: 200px;
+  }
+
+  .ame-text {
+    margin-bottom: 2rem;
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  .navbar-collapse {
+    background-color: #ffffff;
+  }
+
+  .imgcarousel {
+    height: 438px;
+  }
+
+  h1 {
+    font-weight: 700;
+    font-size: 30px;
+  }
+
+  .section1 {
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  h3 {
+    font-weight: 700;
+    margin: 3rem 5rem 2rem 5rem;
+  }
+
+  .imgban {
+    height: 375px;
+    width: 100%;
+  }
+
+  .card-link {
+    font-weight: 600;
+    color: #3f5e77;
+    font-size: 1.2rem;
+  }
+
+  .med {
+    font-weight: 500;
+    font-size: 1.2rem;
+  }
+
+  .jumbo {
+    height: 200px;
+  }
+
+  .card-btn {
+    font-size: 16px;
+    font-weight: 700;
+    width: 50%;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  li {
+    font-size: 20px;
+  }
+  .navbar-collapse {
+    background-color: #d1e2f0;
+  }
+
+  .imgcarousel {
+    height: 445px;
+    object-fit: cover;
+  }
+
+  h1 {
+    font-weight: 700;
+    font-size: 30px;
+  }
+
+  .index-btn {
+    font-size: 14px;
+    width: 25%;
+  }
+
+  .section1 {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 0 52px;
+  }
+  .card1 {
+    width: 75%;
+    font-size: 20px;
+  }
+  .card2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-weight: 700;
+    margin: 3rem 5rem 2rem 5rem;
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-weight: 700;
+    font-size: 1.8rem;
+  }
+
+  .imgban {
+    height: 375px;
+    width: 100%;
+  }
+
+  .card-link {
+    font-weight: 600;
+    color: #3f5e77;
+    font-size: 1.2rem;
+  }
+
+  .med {
+    font-weight: 500;
+    font-size: 1.2rem;
+  }
+
+  .jumbo {
+    height: 400px;
+  }
+
+  .card-img {
+    object-fit: cover;
+  }
+
+  .card-btn {
+    font-size: 16px;
+    font-weight: 600;
+  }
+}
